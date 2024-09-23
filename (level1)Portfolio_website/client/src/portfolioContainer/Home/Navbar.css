@@ -1,0 +1,89 @@
+.navbar-container {
+    width: 100vw;
+    height: 100px;
+  }
+  
+  .navbar-parent {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 90px;
+  }
+  
+  .navbar {
+    width: 70%;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .navbar {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: #1f2235;
+      flex-direction: column;
+      align-items: center;
+      z-index: 999;
+    }
+  
+    .navbar-open {
+      display: flex;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li {
+      margin: 20px 0;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+  }
+  
